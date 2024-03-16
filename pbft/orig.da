@@ -1,0 +1,60 @@
+import sys
+import random
+
+# here, servers is the replicas with us
+class Server(process):
+    def setup(servers):
+        self.n = None              # proposal number
+        self.servers = servers
+        self.f = len(servers)  # acceptable count of faulty nodes
+
+    def receive(msg= ('ClientRequest'), from_=client):
+        if current_primary == self:
+            n = (0, self) if n == None else (n[0]+1, self)
+            send(('pre_prepare', n), to= servers)   # should we send pre_prepare to self?
+
+    def receive(msg= ('pre_prepare', n), from_=server):
+        send(('prepare', n, v), to=servers)   # send prepare to everyone when you receive pre-prepare
+
+        if await(len(setof(a, received(('prepare', n), from_=a))) > 2 * self.f + 1):
+            v = anyof(setof(v, received(('prepare', n, v))) or {random.randint(1, 100)})   # this is not correct, we should take the maximum
+            send(('commit', n), to=servers)
+
+            if await(len(setof(a, received(('commit', n), from_=a))) > 2 * self.f + 1):
+                v = anyof(setof(v, received(('prepare', n, v))) or {random.randint(1, 100)})
+                send(('reply', n), to=client)
+
+    def anyof(s):
+        return next(iter(s)) if s else None
+
+
+class Client:
+    def setup(servers):
+        self.servers = servers
+
+    def receive(msg= 'reply', from_= _):
+        # add await to wait for reply from majority i.e. 2 * f + 1 replicas before it can consider it to be commited
+        send(('Done',), to=servers)
+
+    def run():
+        send(('ClientRequest'), to=servers)
+        
+
+
+def main():
+    nservers = int(sys.argv[1]) if len(sys.argv) > 1 else 5
+    nclients = int(sys.argv[2]) if len(sys.argv) > 1 else 2
+    
+    servers = new(Replica, num= nservers)
+    setup(servers, (servers))
+    
+    clients = new(Client, num= nclients)
+    setup(clients, (servers))
+    
+    current_primary = server[0]
+
+    start(servers | clients)
+
+    await(each(c in clients, has=received(('Done',), from_=c)))
+    output("All clients done.")
+    end(servers)
