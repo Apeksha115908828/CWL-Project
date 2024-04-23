@@ -1,45 +1,94 @@
-Formal Verification of PBFT
+<div align="center" id="top"> 
+  <!-- <img src="./.github/app.gif" alt="CWL Project" /> -->
 
-This project is to write the PBFT protocol in distalgo and perform the formal verification of the safety and liveness properties of the PBFT protocol.
+  &#xa0;
 
-Setup:
+  <!-- <a href="https://cwlproject.netlify.app">Demo</a> -->
+</div>
+
+<h1 align="center">CWL Project: Formal Verification of BFT Protocol Lumiere</h1>
+
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/Apeksha115908828/cwl-project?color=56BEB8">
+
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/Apeksha115908828/cwl-project?color=56BEB8">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Apeksha115908828/cwl-project?color=56BEB8">
+
+  <img alt="License" src="https://img.shields.io/github/license/Apeksha115908828/cwl-project?color=56BEB8">
+
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/Apeksha115908828/cwl-project?color=56BEB8" /> -->
+
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/Apeksha115908828/cwl-project?color=56BEB8" /> -->
+
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/Apeksha115908828/cwl-project?color=56BEB8" /> -->
+</p>
+
+<!-- Status -->
+
+<!-- <h4 align="center"> 
+	🚧  CWL Project 🚀 Under construction...  🚧
+</h4> 
+
+<hr> -->
+
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/Apeksha115908828" target="_blank">Author</a>
+</p>
+
+<br>
+
+## :dart: About ##
+
+Formal verification is a process of mathematically proving the correctness and the adherence of a consensus protocol to the specifications as described. It is crucial to ensure the properties such as correctness, safety, liveness and fault tolerance while working with consensus protocols in Distributed Systems, and formal verification guarantees the reliability of the consensus algorithms in presence of faulty processors. In this project, we have selected [Lumiere](https://arxiv.org/abs/2311.08091v2), a byzantine fault tolerant protocol to perform the runtime formal verification, wherein we will be writing the formal specifications of the algorithm and checker for verifying the correctness of the proposed protocol.
+
+## :white_check_mark: Requirements ##
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Python](https://www.python.org/) installed and [Distalgo](https://distalgo.cs.stonybrook.edu/).
+
+## :checkered_flag: Starting ##
+
+```bash
+# Clone this project
+$ git clone https://github.com/Apeksha115908828/cwl-project
+
+# Access
+$ cd cwl-project
+
 Install python 3.78
 then install distalgo using pip
 
 \$ pip3 install pyDistAlgo
-
 create virtual environment
 go to cd . and activate the venv created:
-
+\$ cd .
 \$ source bin/activate
 
 to execute, go to the folder pbft
+\$ cd lumiere
+\$ python -m da spec.da
+to execute the checker
+\$ python -m da checker.da
+```
 
-\$ cd pbft
+File: lumiere/spec.da has implementation for lumiere protocol using distalgo. Currently specs are only implemented to the extend I could understand the protocol, I shall continue working on the protocol and keep updating the github repository.
 
-\$ python -m da orig.da
+Documentation:
+Tool used: pdoc(version=0.10.0)
+File: [lumiere/build/spec.html](lumiere/build/spec.html)
+File: src/spec.py is just a copy of spec.da to generate the documentation as pdoc doesn't allow other extensions for generating documentation.
 
-PBFT:
-The Practical Byzantine Fault Tolerance (PBFT) algorithm is a state machine replication protocol designed to tolerate Byzantine faults in distributed systems. It ensures both liveness and safety as long as fewer than one-third of the replicas are faulty. PBFT operates in asynchronous systems, incorporating optimizations to achieve efficient performance and providing a practical solution for Byzantine fault tolerance in real-world applications.
+## :memo: License ##
 
-![PBFT](//assets/pbft.png?raw=true "PBFT")
-
-File: pbft/orig.da has implementation for pbft using distalgo, the current is checking for basic properties such as for f faulty nodes, each server should receive 2 * f + 1 requests before it can move to the next stage. The current implementation is not complete, I will continue working on this file to move to the next stage.
-
-DistAlgo is a language that lets you write and run distributed algorithms easily and quickly. We are using distalgo language for our implementation with reference to the work defined in [4].
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE) file.
 
 
+Made with :heart: by <a href="https://github.com/" target="_blank">Apeksha Bodade</a>
 
-References:
+&#xa0;
 
-[1]Miguel Castro and Barbara Liskov, Practical Byzantine Fault Tolerance https://www.pmg.csail.mit.edu/papers/osdi99.pdf (February 1999)
-
-[2]Distalgo implementation: https://github.com/DistAlgo/distalgo
-
-[3]Paxos with distalgo: https://github.com/DistAlgo/distalgo/blob/master/da/examples/lapaxos/orig.da
-
-[4]Distalgo tutorial: https://drive.google.com/file/d/1nyG_XOAEtiOd7DboI2HSkWa90jDfIY6O/view
-
-[5]ACM PODC 2019 Tutorial: https://drive.google.com/file/d/1uzxBVK2AQjnnx1E1fo5X4wZtSdXfNYKT/view
-
-[6]Saksham Chand, Yanhong A. Liu & Scott D. Stoller, Formal Verification of Multi-Paxos for Distributed Consensus https://link.springer.com/chapter/10.1007/978-3-319-48989-6_8 (11 Nov 2019)
+<a href="#top">Back to top</a>

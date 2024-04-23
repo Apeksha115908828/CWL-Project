@@ -1,0 +1,1044 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>spec API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>spec</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import sys
+import random
+import math
+
+class Server ():
+
+    def setup(servers):                                                                 # Local variables
+        &#39;&#39;&#39;
+        This is the setup function for the server process.
+        This is a mandatory function that acts like a constructor where you can set
+        the initial state variables of the server in the system.
+        :param servers: A list of all the servers in the system.
+        :return: None
+        &#39;&#39;&#39;
+        self.lc = 0                                                                     # lc(p), initially 0 |&gt; This is the value of p&#39;s local clock
+        self.view = -1                                                                  # view(p), initially -1 |&gt; the present view of processor P
+        self.epoch = -1                                                                 # epoch(p), initially -1 |&gt; the present epoch of processor P
+        self.success = []                                                               # success(e), e in Z_{&gt;=-1}, initially 0 |&gt; updated as described above
+
+                                                                                        ## unsure variables                       
+        self.c = []                                                                     ## to access c[v], this is the array of clock values for each view
+        self.lc_paused = False                                                          ## local flag to maintain the status of clock paused/unpaused
+        self.servers = servers                                                          ## the list of processors in the system
+        self.f = (len(servers) - 1) / 3                                                 ## number of faulty processors tolerated by the protocol
+        self.delta = 10                                                                 ## predefined timeout for clock pausing, value not mentioned explicitly anywhere,
+                                                                                        ##      need to understand what the correct would be to set, hence setting 10 as a placeholder
+        self.GST = 0                                                                    ## GST(p), initially 0 |&gt; the GST of the system(constant for a system),
+                                                                                        ## again the value not mentioned explicitly and depends on the system
+        return
+
+    def isInitial(view_number):
+        &#39;&#39;&#39;
+        This function returns if the current processor is the initial processor or not.
+        :param view_number: the view number for which the initial processor is to be returned
+        :return: returns True if the current processor is the initial processor, False otherwise
+        &#39;&#39;&#39;
+        return view_number%2 == 0
+
+    def getLeader(view_number, total_processors):
+        &#39;&#39;&#39;
+        This function returns the leader of the given view number.
+        :param view_number: the view number for which the leader is to be returned
+        :param total_processors: the total number of processors in the system
+        :return: returns the server that is leader of the given view number
+        &#39;&#39;&#39;
+        leader_index = ((view_number - 1) // 2) % total_processors
+        return self.servers[leader_index]
+    
+    def isLeader(view_number, total_processors):
+        &#39;&#39;&#39;
+        This function returns if the current processor is the leader of the given view or not.
+        :param view_number: the view number for which the leader status is to be returned
+        :param total_processors: the total number of processors in the system
+        :return: returns True if the current processor is the leader of the given view, else returns False
+        &#39;&#39;&#39;
+        return self == self.getLeader(view_number, total_processors)
+        
+    def isEpochView(view):
+        &#39;&#39;&#39;
+        This function returns whether the given view is an epoch view or not.
+        Each epoch has 10 views, first view of each epoch is the epoch view, others are non-epoch views, page 12(Epochs and epoch views)
+        :param view: the view number for which the epoch view status is to be returned
+        :return: returns True if the given view is an epoch view, else returns False
+        &#39;&#39;&#39;
+        return view % 10 == 1
+
+    def E(view):
+        &#39;&#39;&#39;
+        This function is a getter function to get the epoch number corresponding to the given view number.
+        Each epoch has 10 views, page 12(Epochs and epoch views)
+        :param view: the view number for which the epoch is to be returned
+        :return: returns the epoch number corresponding to the given view.
+        &#39;&#39;&#39;
+        return math.floor(view/10) + 1
+
+    def V(epoch):
+        &#39;&#39;&#39;
+        This function is a getter function to get the first view of the given epoch.
+        Each epoch has 10 views, page 12(Epochs and epoch views)
+        :param epoch: the epoch number for which the view is to be returned
+        :return: returns the view number corresponding to the given epoch number.
+        &#39;&#39;&#39;
+        return 10 * epoch
+
+    def VC(v):
+        &#39;&#39;&#39;
+        This function generates the View Certificate (VC) for view v. Currently we are using a random number generator.
+        :param v: the view number for which the VC is to be generated
+        :return: returns the View Certificate (VC) for view v.
+        &#39;&#39;&#39;
+        return random.randint(0, 100)
+    
+    def EC(v):
+        &#39;&#39;&#39;
+        This function generates the Epoch Certificate (EC) for view v. Currently we are using a random number generator.
+        :param v: the view number for which the EC is to be generated
+        :return: returns the Epoch Certificate (EC) for view v.
+        &#39;&#39;&#39;
+        return random.randint(0, 100)
+    
+    def QC(v):
+        &#39;&#39;&#39;
+        This function generates the Quorum Certificate (QC) for view v. Currently we are using a random number generator.
+        :param v: the view number for which the QC is to be generated
+        :return: returns the Quorum Certificate (QC) for view v.
+        &#39;&#39;&#39;
+        return random.randint(0, 100)
+    
+    def TC(v):
+        &#39;&#39;&#39;
+        This function generates the Time Certificate (TC) for view v. Currently we are using a random number generator.
+        :param v: the view number for which the TC is to be generated
+        :return: returns the Time Certificate (TC) for view v.
+        &#39;&#39;&#39;
+        return random.randint(0, 100)
+
+    def run():
+        &#39;&#39;&#39;
+        This function takes care of adding all the conditions that are mentioned in the Algorithm 1 as 
+        presented on page 14 of the Lumiere paper
+        :return: The function returns when the protocol has terminated.
+        &#39;&#39;&#39;
+        while True :
+            print(&#39;a&#39;)
+                                                                                        # |&gt; ------- Epoch Synchronization Instructions (start)                                                          
+            # line 9-11
+            # if await(_):                                                              # Upon first seeing lc(p) == cv for epoch view v &gt; view(p) and success(E(v) − 1) == 0)
+            #     pass                                                                  # Pause local-clock lc(p) until seeing and EC, QC, or VC for a view &gt;= v or a TC
+                                                                                        # for a view &gt;= v, or until success(E(v) − 1) == 1.
+                                                                                        # If local clock is still paused time delta after pausing, send
+            #line 13-14
+            # el
+            if some(received((&#39;view&#39;, v)), has= self.lc == self.c[v]                    # Upon first seeing lc(p) == cv 
+                and v &gt; self.view and success(E(v)-1) == 1) :                           # for epoch view v &gt; view(p) and success((E(v) − 1) == 1
+                self.epoch = E(v); self.view = v                                        # set epoch(p) := E(v) and view(p) := v.
+
+            #line 16-21
+            elif some(received((&#39;view&#39;, v)),                                            # Upon first seeing a TC for epoch view v with E(v) &gt;= epoch(p)
+                      received((&#39;TC&#39;, v, tc)), has= E(v) &gt;= self.epoch) :
+                if self.lc &lt; c[v] :                                                     # if lc(p) &lt; cv then:
+                    for v1 in range(self.view, v) :                                     # for each initial view v`(v1 here) with view(p) &lt;= v` &lt; v:
+                        send((&#39;view&#39;, v1), to=self.getLeader(v1, len(self.servers)))    # send a view v` message to lead(v`) if not already sent
+                    self.lc = c[v+1]                                                    # set lc(p) := cv;
+                if self.view &lt; (v-1) :                                                  # if view(p) &lt; v - 1 then
+                    self.view = v - 1                                                   # set view(p) := v - 1
+                    self.epoch = E(v) - 1                                               # and epoch(p) := E(v) - 1:
+                send((&#39;epoch view&#39;, v), to=self.servers)                                # send an epoch view v message to all processors if not already sent;
+
+            #line 23-24
+            elif some(received((&#39;view&#39;, v)), received((&#39;EC&#39;, v, ec)),
+                has= E(v) &gt; self.epoch) :                                               # Upon first seeing an EC for epoch view v with E(v) &gt; epoch(p):
+                self.view = v                                                           # set view(p) := v
+                self.epoch = E(v)                                                       # and epoch(p) := E(v)
+                                                                                        # |&gt; ------- Epoch Synchronization Instructions (end)
+                                                                                        # |&gt; ------- View Synchronization Instructions (start)
+            #line 28-30
+            elif some(received((&#39;view&#39;, v)), has= self.lc == self.c[v]                  # Upnow lc(p) == cv
+                and self.isInitial(v) and self.epoch == E(v)):                          # for initial view v and epoch(p) == E(v):
+        
+                if self.view &lt; v :                                                      # if view(p) &lt; v,
+                    self.view = v                                                       # set view(p) := v;
+                send((&#39;view&#39;, v1), to=getLeader(v1, len(self.servers)))                 # send a view v message to lead(v);
+
+            #line 32-34
+            # this section is a new function
+            elif some(received((&#39;view&#39;, v)),                                            # If p == lead(v) for initial view v &gt;= view(p):
+                has= getLeader(v, len(self.servers)) == self
+                and self.isInitial(v) and v &gt;= self.view) :
+                # if await(len(setof(a, received((&#39;view&#39;, v), from_ =a))) &gt; (f + 1)):     # Upon first seeing view v messages from f + 1 distinct processors:
+                if len(setof(a, received((&#39;view&#39;, v), from_ =a))) &gt; (f + 1): 
+                    send((&#39;VC&#39;, v, self.VC(v)), to=self.servers)                        # Form a VC for view v and send to all processors;
+
+            #line 36-40
+            elif some(received((&#39;view&#39;, v)), received((&#39;VC&#39;, v, vc)),                   # Upon first seeing a VC for initial view v &gt;= view(p):
+                has= self.isInitial(v) and v &gt;= self.view) :                
+                if self.lc &lt; c[v] :                                                     # if lc(p) &lt; cv then:
+                    for v1 in range(self.view, v) :                                     # for each initial view v`(v1 here) with view(p) &lt;= v` &lt; v:
+                        send((&#39;view&#39;, v1), to=getLeader(v1, len(servers)))              # send a view v` message to lead(v`) if not already sent;
+                    self.lc = c[v]                                                      # set lc(p) := cv;
+                self.view = v                                                           # set view(p) := v;
+                self.epoch = E(v)                                                       # and epoch(p) := E(v);
+                                                                                        # |&gt; ------- View Synchronization Instructions (end)
+                                                                                        # |&gt; ------- Bump local clock forward on QC
+
+            # line 44-49
+            elif some(received((&#39;view&#39;, v)),                                            # Upon first seeing a QC for view v &gt;= view(p):
+                received((&#39;QC&#39;, v, qc)), has= v &gt;= self.view) :
+                if self.lc &lt; c[v+1] :                                                   # if lc(p) &lt; c[v+1] then:
+                    for v1 in range(self.view, v):                                      # for each initial view v`(v1 here) with view(p) &lt;= v` &lt; v:
+                        if isInitial(v1) :
+                            send((&#39;view&#39;, v1), to=getLeader(v1, len(self.servers)))     # send a view v` message to lead(v`) if not already sent;
+                    self.lc = c[v+1]                                                    # set lc(p) := c[v+1];
+                if not(self.isEpochView(v+1)) :                                         # if v+1 is non-epoch view then:
+                    self.view = v + 1                                                   # set view(p) := v+1;
+                    self.epoch = E(v+1)                                                 # and epoch(p) := E(v+1);
+                if isEpochView(v+1) and self.view &lt; v :                                 # if v+1 is epoch view and view(p) &lt; v then:
+                    self.view = view                                                    # set view(p) := v+1;
+                    self.epoch = E(v)                                                   # and epoch(p) := E(v);
+
+            # Success criterion, page 13, &#39;The success criterion&#39;, this is not part of the pseudo code, hence presented in English
+            # Each processor maintains a local variable success[e] which is initially set to 0. Processor p sets success(e) := 1
+            # upon seeing at least 2f + 1 distinct processors each produce 10 QCs for views in the epoch. We say that epoch e
+            # &#39;produces the success criterion&#39; if at least 2f + 1 distinct processors each produce 10 QCs for views in the epoch.
+            elif each(a1 in setof(a, received((&#39;QC&#39;, v, qc), from_=a)),
+                has= len(setof(qc, received((&#39;QC&#39;, v, qc), from_=a1)) == 10)) and len(setof(a, received((&#39;QC&#39;, v, qc), from_=a))) &gt;= 2*f +1:    # TODO: Must make sure the views belong to same epoch
+                success[self.E(v)] = 1
+
+            # sending EC, page 9, this is not part of the pseudo code, hence presented in English
+            # Upon receving epoch view v messages from 2*f + 1 distinct processors while in a view &lt; v,
+            # any honest processor combines these into a single threshold signature, which is called an EC for view v,
+            # and sends the EC to all processors.
+            elif len(setof(a, received((&#39;QC&#39;, v, qc), from_=a))) &gt;= (2*f) + 1:
+                send((&#39;EC&#39;, v, EC()), to=self.servers)
+                send((&#39;epoch view&#39;, v), to=self.servers)
+                
+            # sending QC, page 10?
+            # on receiving &#39;view&#39; message from 2*f + 1 processors, we generate QC at the leader
+            elif len(setof(a, received((&#39;view&#39;, v), from_=a))) &gt;= (2*f) + 1 and self.getLeader() == self :
+                send((&#39;QC&#39;, v, QC()), to=self.servers)
+
+#           Any honest processor who reaches the end of epoch 4 and does not see the success criterion
+# satisfied pauses its local clock and sends an epoch view + (4 + 1) message to all processors
+# Any set of 5 + 1 epoch view + (4 + 1) messages from distinct processors is referred to as a
+# TC for view E.
+# • When any honest processor in an epoch ≤ 4 + 1 sees a TC for view + (4 + 1), they send an
+# epoch view + (4 + 1) message to all processors.
+            # sending TC, page ?
+            
+        return True
+
+class Client():
+    def setup(servers):
+        self.servers = servers
+
+    def run():
+        send((&#39;ClientRequest&#39;), to=self.servers)
+
+
+def main():
+    &#39;&#39;&#39;
+    This function is the start of the program.
+    It creates the servers and clients, and starts them.
+    The number of servers and clients can be specified as command line arguments.
+    The default values are 5 servers and 2 clients.\
+    &#39;&#39;&#39;
+    nservers = int(sys.argv[1]) if len(sys.argv) &gt; 1 else 5
+    nclients = int(sys.argv[2]) if len(sys.argv) &gt; 2 else 2
+
+    servers = new(Server, num=nservers)
+    clients = new(Client, num=nclients)
+
+    setup(servers | clients, (servers,))
+
+    start(servers | clients)
+
+    each(c in clients, has=received((&#39;Done&#39;,), from_=c))
+    output(&#34;All clients done.&#34;)
+    end(servers)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="spec.main"><code class="name flex">
+<span>def <span class="ident">main</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function is the start of the program.
+It creates the servers and clients, and starts them.
+The number of servers and clients can be specified as command line arguments.
+The default values are 5 servers and 2 clients.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def main():
+    &#39;&#39;&#39;
+    This function is the start of the program.
+    It creates the servers and clients, and starts them.
+    The number of servers and clients can be specified as command line arguments.
+    The default values are 5 servers and 2 clients.\
+    &#39;&#39;&#39;
+    nservers = int(sys.argv[1]) if len(sys.argv) &gt; 1 else 5
+    nclients = int(sys.argv[2]) if len(sys.argv) &gt; 2 else 2
+
+    servers = new(Server, num=nservers)
+    clients = new(Client, num=nclients)
+
+    setup(servers | clients, (servers,))
+
+    start(servers | clients)
+
+    each(c in clients, has=received((&#39;Done&#39;,), from_=c))
+    output(&#34;All clients done.&#34;)
+    end(servers)</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="spec.Client"><code class="flex name class">
+<span>class <span class="ident">Client</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Client():
+    def setup(servers):
+        self.servers = servers
+
+    def run():
+        send((&#39;ClientRequest&#39;), to=self.servers)</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="spec.Client.run"><code class="name flex">
+<span>def <span class="ident">run</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def run():
+    send((&#39;ClientRequest&#39;), to=self.servers)</code></pre>
+</details>
+</dd>
+<dt id="spec.Client.setup"><code class="name flex">
+<span>def <span class="ident">setup</span></span>(<span>servers)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def setup(servers):
+    self.servers = servers</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="spec.Server"><code class="flex name class">
+<span>class <span class="ident">Server</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Server ():
+
+    def setup(servers):                                                                 # Local variables
+        &#39;&#39;&#39;
+        This is the setup function for the server process.
+        This is a mandatory function that acts like a constructor where you can set
+        the initial state variables of the server in the system.
+        :param servers: A list of all the servers in the system.
+        :return: None
+        &#39;&#39;&#39;
+        self.lc = 0                                                                     # lc(p), initially 0 |&gt; This is the value of p&#39;s local clock
+        self.view = -1                                                                  # view(p), initially -1 |&gt; the present view of processor P
+        self.epoch = -1                                                                 # epoch(p), initially -1 |&gt; the present epoch of processor P
+        self.success = []                                                               # success(e), e in Z_{&gt;=-1}, initially 0 |&gt; updated as described above
+
+                                                                                        ## unsure variables                       
+        self.c = []                                                                     ## to access c[v], this is the array of clock values for each view
+        self.lc_paused = False                                                          ## local flag to maintain the status of clock paused/unpaused
+        self.servers = servers                                                          ## the list of processors in the system
+        self.f = (len(servers) - 1) / 3                                                 ## number of faulty processors tolerated by the protocol
+        self.delta = 10                                                                 ## predefined timeout for clock pausing, value not mentioned explicitly anywhere,
+                                                                                        ##      need to understand what the correct would be to set, hence setting 10 as a placeholder
+        self.GST = 0                                                                    ## GST(p), initially 0 |&gt; the GST of the system(constant for a system),
+                                                                                        ## again the value not mentioned explicitly and depends on the system
+        return
+
+    def isInitial(view_number):
+        &#39;&#39;&#39;
+        This function returns if the current processor is the initial processor or not.
+        :param view_number: the view number for which the initial processor is to be returned
+        :return: returns True if the current processor is the initial processor, False otherwise
+        &#39;&#39;&#39;
+        return view_number%2 == 0
+
+    def getLeader(view_number, total_processors):
+        &#39;&#39;&#39;
+        This function returns the leader of the given view number.
+        :param view_number: the view number for which the leader is to be returned
+        :param total_processors: the total number of processors in the system
+        :return: returns the server that is leader of the given view number
+        &#39;&#39;&#39;
+        leader_index = ((view_number - 1) // 2) % total_processors
+        return self.servers[leader_index]
+    
+    def isLeader(view_number, total_processors):
+        &#39;&#39;&#39;
+        This function returns if the current processor is the leader of the given view or not.
+        :param view_number: the view number for which the leader status is to be returned
+        :param total_processors: the total number of processors in the system
+        :return: returns True if the current processor is the leader of the given view, else returns False
+        &#39;&#39;&#39;
+        return self == self.getLeader(view_number, total_processors)
+        
+    def isEpochView(view):
+        &#39;&#39;&#39;
+        This function returns whether the given view is an epoch view or not.
+        Each epoch has 10 views, first view of each epoch is the epoch view, others are non-epoch views, page 12(Epochs and epoch views)
+        :param view: the view number for which the epoch view status is to be returned
+        :return: returns True if the given view is an epoch view, else returns False
+        &#39;&#39;&#39;
+        return view % 10 == 1
+
+    def E(view):
+        &#39;&#39;&#39;
+        This function is a getter function to get the epoch number corresponding to the given view number.
+        Each epoch has 10 views, page 12(Epochs and epoch views)
+        :param view: the view number for which the epoch is to be returned
+        :return: returns the epoch number corresponding to the given view.
+        &#39;&#39;&#39;
+        return math.floor(view/10) + 1
+
+    def V(epoch):
+        &#39;&#39;&#39;
+        This function is a getter function to get the first view of the given epoch.
+        Each epoch has 10 views, page 12(Epochs and epoch views)
+        :param epoch: the epoch number for which the view is to be returned
+        :return: returns the view number corresponding to the given epoch number.
+        &#39;&#39;&#39;
+        return 10 * epoch
+
+    def VC(v):
+        &#39;&#39;&#39;
+        This function generates the View Certificate (VC) for view v. Currently we are using a random number generator.
+        :param v: the view number for which the VC is to be generated
+        :return: returns the View Certificate (VC) for view v.
+        &#39;&#39;&#39;
+        return random.randint(0, 100)
+    
+    def EC(v):
+        &#39;&#39;&#39;
+        This function generates the Epoch Certificate (EC) for view v. Currently we are using a random number generator.
+        :param v: the view number for which the EC is to be generated
+        :return: returns the Epoch Certificate (EC) for view v.
+        &#39;&#39;&#39;
+        return random.randint(0, 100)
+    
+    def QC(v):
+        &#39;&#39;&#39;
+        This function generates the Quorum Certificate (QC) for view v. Currently we are using a random number generator.
+        :param v: the view number for which the QC is to be generated
+        :return: returns the Quorum Certificate (QC) for view v.
+        &#39;&#39;&#39;
+        return random.randint(0, 100)
+    
+    def TC(v):
+        &#39;&#39;&#39;
+        This function generates the Time Certificate (TC) for view v. Currently we are using a random number generator.
+        :param v: the view number for which the TC is to be generated
+        :return: returns the Time Certificate (TC) for view v.
+        &#39;&#39;&#39;
+        return random.randint(0, 100)
+
+    def run():
+        &#39;&#39;&#39;
+        This function takes care of adding all the conditions that are mentioned in the Algorithm 1 as 
+        presented on page 14 of the Lumiere paper
+        :return: The function returns when the protocol has terminated.
+        &#39;&#39;&#39;
+        while True :
+            print(&#39;a&#39;)
+                                                                                        # |&gt; ------- Epoch Synchronization Instructions (start)                                                          
+            # line 9-11
+            # if await(_):                                                              # Upon first seeing lc(p) == cv for epoch view v &gt; view(p) and success(E(v) − 1) == 0)
+            #     pass                                                                  # Pause local-clock lc(p) until seeing and EC, QC, or VC for a view &gt;= v or a TC
+                                                                                        # for a view &gt;= v, or until success(E(v) − 1) == 1.
+                                                                                        # If local clock is still paused time delta after pausing, send
+            #line 13-14
+            # el
+            if some(received((&#39;view&#39;, v)), has= self.lc == self.c[v]                    # Upon first seeing lc(p) == cv 
+                and v &gt; self.view and success(E(v)-1) == 1) :                           # for epoch view v &gt; view(p) and success((E(v) − 1) == 1
+                self.epoch = E(v); self.view = v                                        # set epoch(p) := E(v) and view(p) := v.
+
+            #line 16-21
+            elif some(received((&#39;view&#39;, v)),                                            # Upon first seeing a TC for epoch view v with E(v) &gt;= epoch(p)
+                      received((&#39;TC&#39;, v, tc)), has= E(v) &gt;= self.epoch) :
+                if self.lc &lt; c[v] :                                                     # if lc(p) &lt; cv then:
+                    for v1 in range(self.view, v) :                                     # for each initial view v`(v1 here) with view(p) &lt;= v` &lt; v:
+                        send((&#39;view&#39;, v1), to=self.getLeader(v1, len(self.servers)))    # send a view v` message to lead(v`) if not already sent
+                    self.lc = c[v+1]                                                    # set lc(p) := cv;
+                if self.view &lt; (v-1) :                                                  # if view(p) &lt; v - 1 then
+                    self.view = v - 1                                                   # set view(p) := v - 1
+                    self.epoch = E(v) - 1                                               # and epoch(p) := E(v) - 1:
+                send((&#39;epoch view&#39;, v), to=self.servers)                                # send an epoch view v message to all processors if not already sent;
+
+            #line 23-24
+            elif some(received((&#39;view&#39;, v)), received((&#39;EC&#39;, v, ec)),
+                has= E(v) &gt; self.epoch) :                                               # Upon first seeing an EC for epoch view v with E(v) &gt; epoch(p):
+                self.view = v                                                           # set view(p) := v
+                self.epoch = E(v)                                                       # and epoch(p) := E(v)
+                                                                                        # |&gt; ------- Epoch Synchronization Instructions (end)
+                                                                                        # |&gt; ------- View Synchronization Instructions (start)
+            #line 28-30
+            elif some(received((&#39;view&#39;, v)), has= self.lc == self.c[v]                  # Upnow lc(p) == cv
+                and self.isInitial(v) and self.epoch == E(v)):                          # for initial view v and epoch(p) == E(v):
+        
+                if self.view &lt; v :                                                      # if view(p) &lt; v,
+                    self.view = v                                                       # set view(p) := v;
+                send((&#39;view&#39;, v1), to=getLeader(v1, len(self.servers)))                 # send a view v message to lead(v);
+
+            #line 32-34
+            # this section is a new function
+            elif some(received((&#39;view&#39;, v)),                                            # If p == lead(v) for initial view v &gt;= view(p):
+                has= getLeader(v, len(self.servers)) == self
+                and self.isInitial(v) and v &gt;= self.view) :
+                # if await(len(setof(a, received((&#39;view&#39;, v), from_ =a))) &gt; (f + 1)):     # Upon first seeing view v messages from f + 1 distinct processors:
+                if len(setof(a, received((&#39;view&#39;, v), from_ =a))) &gt; (f + 1): 
+                    send((&#39;VC&#39;, v, self.VC(v)), to=self.servers)                        # Form a VC for view v and send to all processors;
+
+            #line 36-40
+            elif some(received((&#39;view&#39;, v)), received((&#39;VC&#39;, v, vc)),                   # Upon first seeing a VC for initial view v &gt;= view(p):
+                has= self.isInitial(v) and v &gt;= self.view) :                
+                if self.lc &lt; c[v] :                                                     # if lc(p) &lt; cv then:
+                    for v1 in range(self.view, v) :                                     # for each initial view v`(v1 here) with view(p) &lt;= v` &lt; v:
+                        send((&#39;view&#39;, v1), to=getLeader(v1, len(servers)))              # send a view v` message to lead(v`) if not already sent;
+                    self.lc = c[v]                                                      # set lc(p) := cv;
+                self.view = v                                                           # set view(p) := v;
+                self.epoch = E(v)                                                       # and epoch(p) := E(v);
+                                                                                        # |&gt; ------- View Synchronization Instructions (end)
+                                                                                        # |&gt; ------- Bump local clock forward on QC
+
+            # line 44-49
+            elif some(received((&#39;view&#39;, v)),                                            # Upon first seeing a QC for view v &gt;= view(p):
+                received((&#39;QC&#39;, v, qc)), has= v &gt;= self.view) :
+                if self.lc &lt; c[v+1] :                                                   # if lc(p) &lt; c[v+1] then:
+                    for v1 in range(self.view, v):                                      # for each initial view v`(v1 here) with view(p) &lt;= v` &lt; v:
+                        if isInitial(v1) :
+                            send((&#39;view&#39;, v1), to=getLeader(v1, len(self.servers)))     # send a view v` message to lead(v`) if not already sent;
+                    self.lc = c[v+1]                                                    # set lc(p) := c[v+1];
+                if not(self.isEpochView(v+1)) :                                         # if v+1 is non-epoch view then:
+                    self.view = v + 1                                                   # set view(p) := v+1;
+                    self.epoch = E(v+1)                                                 # and epoch(p) := E(v+1);
+                if isEpochView(v+1) and self.view &lt; v :                                 # if v+1 is epoch view and view(p) &lt; v then:
+                    self.view = view                                                    # set view(p) := v+1;
+                    self.epoch = E(v)                                                   # and epoch(p) := E(v);
+
+            # Success criterion, page 13, &#39;The success criterion&#39;, this is not part of the pseudo code, hence presented in English
+            # Each processor maintains a local variable success[e] which is initially set to 0. Processor p sets success(e) := 1
+            # upon seeing at least 2f + 1 distinct processors each produce 10 QCs for views in the epoch. We say that epoch e
+            # &#39;produces the success criterion&#39; if at least 2f + 1 distinct processors each produce 10 QCs for views in the epoch.
+            elif each(a1 in setof(a, received((&#39;QC&#39;, v, qc), from_=a)),
+                has= len(setof(qc, received((&#39;QC&#39;, v, qc), from_=a1)) == 10)) and len(setof(a, received((&#39;QC&#39;, v, qc), from_=a))) &gt;= 2*f +1:    # TODO: Must make sure the views belong to same epoch
+                success[self.E(v)] = 1
+
+            # sending EC, page 9, this is not part of the pseudo code, hence presented in English
+            # Upon receving epoch view v messages from 2*f + 1 distinct processors while in a view &lt; v,
+            # any honest processor combines these into a single threshold signature, which is called an EC for view v,
+            # and sends the EC to all processors.
+            elif len(setof(a, received((&#39;QC&#39;, v, qc), from_=a))) &gt;= (2*f) + 1:
+                send((&#39;EC&#39;, v, EC()), to=self.servers)
+                send((&#39;epoch view&#39;, v), to=self.servers)
+                
+            # sending QC, page 10?
+            # on receiving &#39;view&#39; message from 2*f + 1 processors, we generate QC at the leader
+            elif len(setof(a, received((&#39;view&#39;, v), from_=a))) &gt;= (2*f) + 1 and self.getLeader() == self :
+                send((&#39;QC&#39;, v, QC()), to=self.servers)
+
+#           Any honest processor who reaches the end of epoch 4 and does not see the success criterion
+# satisfied pauses its local clock and sends an epoch view + (4 + 1) message to all processors
+# Any set of 5 + 1 epoch view + (4 + 1) messages from distinct processors is referred to as a
+# TC for view E.
+# • When any honest processor in an epoch ≤ 4 + 1 sees a TC for view + (4 + 1), they send an
+# epoch view + (4 + 1) message to all processors.
+            # sending TC, page ?
+            
+        return True</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="spec.Server.E"><code class="name flex">
+<span>def <span class="ident">E</span></span>(<span>view)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function is a getter function to get the epoch number corresponding to the given view number.
+Each epoch has 10 views, page 12(Epochs and epoch views)
+:param view: the view number for which the epoch is to be returned
+:return: returns the epoch number corresponding to the given view.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def E(view):
+    &#39;&#39;&#39;
+    This function is a getter function to get the epoch number corresponding to the given view number.
+    Each epoch has 10 views, page 12(Epochs and epoch views)
+    :param view: the view number for which the epoch is to be returned
+    :return: returns the epoch number corresponding to the given view.
+    &#39;&#39;&#39;
+    return math.floor(view/10) + 1</code></pre>
+</details>
+</dd>
+<dt id="spec.Server.EC"><code class="name flex">
+<span>def <span class="ident">EC</span></span>(<span>v)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function generates the Epoch Certificate (EC) for view v. Currently we are using a random number generator.
+:param v: the view number for which the EC is to be generated
+:return: returns the Epoch Certificate (EC) for view v.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def EC(v):
+    &#39;&#39;&#39;
+    This function generates the Epoch Certificate (EC) for view v. Currently we are using a random number generator.
+    :param v: the view number for which the EC is to be generated
+    :return: returns the Epoch Certificate (EC) for view v.
+    &#39;&#39;&#39;
+    return random.randint(0, 100)</code></pre>
+</details>
+</dd>
+<dt id="spec.Server.QC"><code class="name flex">
+<span>def <span class="ident">QC</span></span>(<span>v)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function generates the Quorum Certificate (QC) for view v. Currently we are using a random number generator.
+:param v: the view number for which the QC is to be generated
+:return: returns the Quorum Certificate (QC) for view v.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def QC(v):
+    &#39;&#39;&#39;
+    This function generates the Quorum Certificate (QC) for view v. Currently we are using a random number generator.
+    :param v: the view number for which the QC is to be generated
+    :return: returns the Quorum Certificate (QC) for view v.
+    &#39;&#39;&#39;
+    return random.randint(0, 100)</code></pre>
+</details>
+</dd>
+<dt id="spec.Server.TC"><code class="name flex">
+<span>def <span class="ident">TC</span></span>(<span>v)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function generates the Time Certificate (TC) for view v. Currently we are using a random number generator.
+:param v: the view number for which the TC is to be generated
+:return: returns the Time Certificate (TC) for view v.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def TC(v):
+    &#39;&#39;&#39;
+    This function generates the Time Certificate (TC) for view v. Currently we are using a random number generator.
+    :param v: the view number for which the TC is to be generated
+    :return: returns the Time Certificate (TC) for view v.
+    &#39;&#39;&#39;
+    return random.randint(0, 100)</code></pre>
+</details>
+</dd>
+<dt id="spec.Server.V"><code class="name flex">
+<span>def <span class="ident">V</span></span>(<span>epoch)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function is a getter function to get the first view of the given epoch.
+Each epoch has 10 views, page 12(Epochs and epoch views)
+:param epoch: the epoch number for which the view is to be returned
+:return: returns the view number corresponding to the given epoch number.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def V(epoch):
+    &#39;&#39;&#39;
+    This function is a getter function to get the first view of the given epoch.
+    Each epoch has 10 views, page 12(Epochs and epoch views)
+    :param epoch: the epoch number for which the view is to be returned
+    :return: returns the view number corresponding to the given epoch number.
+    &#39;&#39;&#39;
+    return 10 * epoch</code></pre>
+</details>
+</dd>
+<dt id="spec.Server.VC"><code class="name flex">
+<span>def <span class="ident">VC</span></span>(<span>v)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function generates the View Certificate (VC) for view v. Currently we are using a random number generator.
+:param v: the view number for which the VC is to be generated
+:return: returns the View Certificate (VC) for view v.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def VC(v):
+    &#39;&#39;&#39;
+    This function generates the View Certificate (VC) for view v. Currently we are using a random number generator.
+    :param v: the view number for which the VC is to be generated
+    :return: returns the View Certificate (VC) for view v.
+    &#39;&#39;&#39;
+    return random.randint(0, 100)</code></pre>
+</details>
+</dd>
+<dt id="spec.Server.getLeader"><code class="name flex">
+<span>def <span class="ident">getLeader</span></span>(<span>view_number, total_processors)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function returns the leader of the given view number.
+:param view_number: the view number for which the leader is to be returned
+:param total_processors: the total number of processors in the system
+:return: returns the server that is leader of the given view number</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getLeader(view_number, total_processors):
+    &#39;&#39;&#39;
+    This function returns the leader of the given view number.
+    :param view_number: the view number for which the leader is to be returned
+    :param total_processors: the total number of processors in the system
+    :return: returns the server that is leader of the given view number
+    &#39;&#39;&#39;
+    leader_index = ((view_number - 1) // 2) % total_processors
+    return self.servers[leader_index]</code></pre>
+</details>
+</dd>
+<dt id="spec.Server.isEpochView"><code class="name flex">
+<span>def <span class="ident">isEpochView</span></span>(<span>view)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function returns whether the given view is an epoch view or not.
+Each epoch has 10 views, first view of each epoch is the epoch view, others are non-epoch views, page 12(Epochs and epoch views)
+:param view: the view number for which the epoch view status is to be returned
+:return: returns True if the given view is an epoch view, else returns False</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def isEpochView(view):
+    &#39;&#39;&#39;
+    This function returns whether the given view is an epoch view or not.
+    Each epoch has 10 views, first view of each epoch is the epoch view, others are non-epoch views, page 12(Epochs and epoch views)
+    :param view: the view number for which the epoch view status is to be returned
+    :return: returns True if the given view is an epoch view, else returns False
+    &#39;&#39;&#39;
+    return view % 10 == 1</code></pre>
+</details>
+</dd>
+<dt id="spec.Server.isInitial"><code class="name flex">
+<span>def <span class="ident">isInitial</span></span>(<span>view_number)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function returns if the current processor is the initial processor or not.
+:param view_number: the view number for which the initial processor is to be returned
+:return: returns True if the current processor is the initial processor, False otherwise</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def isInitial(view_number):
+    &#39;&#39;&#39;
+    This function returns if the current processor is the initial processor or not.
+    :param view_number: the view number for which the initial processor is to be returned
+    :return: returns True if the current processor is the initial processor, False otherwise
+    &#39;&#39;&#39;
+    return view_number%2 == 0</code></pre>
+</details>
+</dd>
+<dt id="spec.Server.isLeader"><code class="name flex">
+<span>def <span class="ident">isLeader</span></span>(<span>view_number, total_processors)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function returns if the current processor is the leader of the given view or not.
+:param view_number: the view number for which the leader status is to be returned
+:param total_processors: the total number of processors in the system
+:return: returns True if the current processor is the leader of the given view, else returns False</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def isLeader(view_number, total_processors):
+    &#39;&#39;&#39;
+    This function returns if the current processor is the leader of the given view or not.
+    :param view_number: the view number for which the leader status is to be returned
+    :param total_processors: the total number of processors in the system
+    :return: returns True if the current processor is the leader of the given view, else returns False
+    &#39;&#39;&#39;
+    return self == self.getLeader(view_number, total_processors)</code></pre>
+</details>
+</dd>
+<dt id="spec.Server.run"><code class="name flex">
+<span>def <span class="ident">run</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function takes care of adding all the conditions that are mentioned in the Algorithm 1 as
+presented on page 14 of the Lumiere paper
+:return: The function returns when the protocol has terminated.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">    def run():
+        &#39;&#39;&#39;
+        This function takes care of adding all the conditions that are mentioned in the Algorithm 1 as 
+        presented on page 14 of the Lumiere paper
+        :return: The function returns when the protocol has terminated.
+        &#39;&#39;&#39;
+        while True :
+            print(&#39;a&#39;)
+                                                                                        # |&gt; ------- Epoch Synchronization Instructions (start)                                                          
+            # line 9-11
+            # if await(_):                                                              # Upon first seeing lc(p) == cv for epoch view v &gt; view(p) and success(E(v) − 1) == 0)
+            #     pass                                                                  # Pause local-clock lc(p) until seeing and EC, QC, or VC for a view &gt;= v or a TC
+                                                                                        # for a view &gt;= v, or until success(E(v) − 1) == 1.
+                                                                                        # If local clock is still paused time delta after pausing, send
+            #line 13-14
+            # el
+            if some(received((&#39;view&#39;, v)), has= self.lc == self.c[v]                    # Upon first seeing lc(p) == cv 
+                and v &gt; self.view and success(E(v)-1) == 1) :                           # for epoch view v &gt; view(p) and success((E(v) − 1) == 1
+                self.epoch = E(v); self.view = v                                        # set epoch(p) := E(v) and view(p) := v.
+
+            #line 16-21
+            elif some(received((&#39;view&#39;, v)),                                            # Upon first seeing a TC for epoch view v with E(v) &gt;= epoch(p)
+                      received((&#39;TC&#39;, v, tc)), has= E(v) &gt;= self.epoch) :
+                if self.lc &lt; c[v] :                                                     # if lc(p) &lt; cv then:
+                    for v1 in range(self.view, v) :                                     # for each initial view v`(v1 here) with view(p) &lt;= v` &lt; v:
+                        send((&#39;view&#39;, v1), to=self.getLeader(v1, len(self.servers)))    # send a view v` message to lead(v`) if not already sent
+                    self.lc = c[v+1]                                                    # set lc(p) := cv;
+                if self.view &lt; (v-1) :                                                  # if view(p) &lt; v - 1 then
+                    self.view = v - 1                                                   # set view(p) := v - 1
+                    self.epoch = E(v) - 1                                               # and epoch(p) := E(v) - 1:
+                send((&#39;epoch view&#39;, v), to=self.servers)                                # send an epoch view v message to all processors if not already sent;
+
+            #line 23-24
+            elif some(received((&#39;view&#39;, v)), received((&#39;EC&#39;, v, ec)),
+                has= E(v) &gt; self.epoch) :                                               # Upon first seeing an EC for epoch view v with E(v) &gt; epoch(p):
+                self.view = v                                                           # set view(p) := v
+                self.epoch = E(v)                                                       # and epoch(p) := E(v)
+                                                                                        # |&gt; ------- Epoch Synchronization Instructions (end)
+                                                                                        # |&gt; ------- View Synchronization Instructions (start)
+            #line 28-30
+            elif some(received((&#39;view&#39;, v)), has= self.lc == self.c[v]                  # Upnow lc(p) == cv
+                and self.isInitial(v) and self.epoch == E(v)):                          # for initial view v and epoch(p) == E(v):
+        
+                if self.view &lt; v :                                                      # if view(p) &lt; v,
+                    self.view = v                                                       # set view(p) := v;
+                send((&#39;view&#39;, v1), to=getLeader(v1, len(self.servers)))                 # send a view v message to lead(v);
+
+            #line 32-34
+            # this section is a new function
+            elif some(received((&#39;view&#39;, v)),                                            # If p == lead(v) for initial view v &gt;= view(p):
+                has= getLeader(v, len(self.servers)) == self
+                and self.isInitial(v) and v &gt;= self.view) :
+                # if await(len(setof(a, received((&#39;view&#39;, v), from_ =a))) &gt; (f + 1)):     # Upon first seeing view v messages from f + 1 distinct processors:
+                if len(setof(a, received((&#39;view&#39;, v), from_ =a))) &gt; (f + 1): 
+                    send((&#39;VC&#39;, v, self.VC(v)), to=self.servers)                        # Form a VC for view v and send to all processors;
+
+            #line 36-40
+            elif some(received((&#39;view&#39;, v)), received((&#39;VC&#39;, v, vc)),                   # Upon first seeing a VC for initial view v &gt;= view(p):
+                has= self.isInitial(v) and v &gt;= self.view) :                
+                if self.lc &lt; c[v] :                                                     # if lc(p) &lt; cv then:
+                    for v1 in range(self.view, v) :                                     # for each initial view v`(v1 here) with view(p) &lt;= v` &lt; v:
+                        send((&#39;view&#39;, v1), to=getLeader(v1, len(servers)))              # send a view v` message to lead(v`) if not already sent;
+                    self.lc = c[v]                                                      # set lc(p) := cv;
+                self.view = v                                                           # set view(p) := v;
+                self.epoch = E(v)                                                       # and epoch(p) := E(v);
+                                                                                        # |&gt; ------- View Synchronization Instructions (end)
+                                                                                        # |&gt; ------- Bump local clock forward on QC
+
+            # line 44-49
+            elif some(received((&#39;view&#39;, v)),                                            # Upon first seeing a QC for view v &gt;= view(p):
+                received((&#39;QC&#39;, v, qc)), has= v &gt;= self.view) :
+                if self.lc &lt; c[v+1] :                                                   # if lc(p) &lt; c[v+1] then:
+                    for v1 in range(self.view, v):                                      # for each initial view v`(v1 here) with view(p) &lt;= v` &lt; v:
+                        if isInitial(v1) :
+                            send((&#39;view&#39;, v1), to=getLeader(v1, len(self.servers)))     # send a view v` message to lead(v`) if not already sent;
+                    self.lc = c[v+1]                                                    # set lc(p) := c[v+1];
+                if not(self.isEpochView(v+1)) :                                         # if v+1 is non-epoch view then:
+                    self.view = v + 1                                                   # set view(p) := v+1;
+                    self.epoch = E(v+1)                                                 # and epoch(p) := E(v+1);
+                if isEpochView(v+1) and self.view &lt; v :                                 # if v+1 is epoch view and view(p) &lt; v then:
+                    self.view = view                                                    # set view(p) := v+1;
+                    self.epoch = E(v)                                                   # and epoch(p) := E(v);
+
+            # Success criterion, page 13, &#39;The success criterion&#39;, this is not part of the pseudo code, hence presented in English
+            # Each processor maintains a local variable success[e] which is initially set to 0. Processor p sets success(e) := 1
+            # upon seeing at least 2f + 1 distinct processors each produce 10 QCs for views in the epoch. We say that epoch e
+            # &#39;produces the success criterion&#39; if at least 2f + 1 distinct processors each produce 10 QCs for views in the epoch.
+            elif each(a1 in setof(a, received((&#39;QC&#39;, v, qc), from_=a)),
+                has= len(setof(qc, received((&#39;QC&#39;, v, qc), from_=a1)) == 10)) and len(setof(a, received((&#39;QC&#39;, v, qc), from_=a))) &gt;= 2*f +1:    # TODO: Must make sure the views belong to same epoch
+                success[self.E(v)] = 1
+
+            # sending EC, page 9, this is not part of the pseudo code, hence presented in English
+            # Upon receving epoch view v messages from 2*f + 1 distinct processors while in a view &lt; v,
+            # any honest processor combines these into a single threshold signature, which is called an EC for view v,
+            # and sends the EC to all processors.
+            elif len(setof(a, received((&#39;QC&#39;, v, qc), from_=a))) &gt;= (2*f) + 1:
+                send((&#39;EC&#39;, v, EC()), to=self.servers)
+                send((&#39;epoch view&#39;, v), to=self.servers)
+                
+            # sending QC, page 10?
+            # on receiving &#39;view&#39; message from 2*f + 1 processors, we generate QC at the leader
+            elif len(setof(a, received((&#39;view&#39;, v), from_=a))) &gt;= (2*f) + 1 and self.getLeader() == self :
+                send((&#39;QC&#39;, v, QC()), to=self.servers)
+
+#           Any honest processor who reaches the end of epoch 4 and does not see the success criterion
+# satisfied pauses its local clock and sends an epoch view + (4 + 1) message to all processors
+# Any set of 5 + 1 epoch view + (4 + 1) messages from distinct processors is referred to as a
+# TC for view E.
+# • When any honest processor in an epoch ≤ 4 + 1 sees a TC for view + (4 + 1), they send an
+# epoch view + (4 + 1) message to all processors.
+            # sending TC, page ?
+            
+        return True</code></pre>
+</details>
+</dd>
+<dt id="spec.Server.setup"><code class="name flex">
+<span>def <span class="ident">setup</span></span>(<span>servers)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This is the setup function for the server process.
+This is a mandatory function that acts like a constructor where you can set
+the initial state variables of the server in the system.
+:param servers: A list of all the servers in the system.
+:return: None</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def setup(servers):                                                                 # Local variables
+    &#39;&#39;&#39;
+    This is the setup function for the server process.
+    This is a mandatory function that acts like a constructor where you can set
+    the initial state variables of the server in the system.
+    :param servers: A list of all the servers in the system.
+    :return: None
+    &#39;&#39;&#39;
+    self.lc = 0                                                                     # lc(p), initially 0 |&gt; This is the value of p&#39;s local clock
+    self.view = -1                                                                  # view(p), initially -1 |&gt; the present view of processor P
+    self.epoch = -1                                                                 # epoch(p), initially -1 |&gt; the present epoch of processor P
+    self.success = []                                                               # success(e), e in Z_{&gt;=-1}, initially 0 |&gt; updated as described above
+
+                                                                                    ## unsure variables                       
+    self.c = []                                                                     ## to access c[v], this is the array of clock values for each view
+    self.lc_paused = False                                                          ## local flag to maintain the status of clock paused/unpaused
+    self.servers = servers                                                          ## the list of processors in the system
+    self.f = (len(servers) - 1) / 3                                                 ## number of faulty processors tolerated by the protocol
+    self.delta = 10                                                                 ## predefined timeout for clock pausing, value not mentioned explicitly anywhere,
+                                                                                    ##      need to understand what the correct would be to set, hence setting 10 as a placeholder
+    self.GST = 0                                                                    ## GST(p), initially 0 |&gt; the GST of the system(constant for a system),
+                                                                                    ## again the value not mentioned explicitly and depends on the system
+    return</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="spec.main" href="#spec.main">main</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="spec.Client" href="#spec.Client">Client</a></code></h4>
+<ul class="">
+<li><code><a title="spec.Client.run" href="#spec.Client.run">run</a></code></li>
+<li><code><a title="spec.Client.setup" href="#spec.Client.setup">setup</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="spec.Server" href="#spec.Server">Server</a></code></h4>
+<ul class="two-column">
+<li><code><a title="spec.Server.E" href="#spec.Server.E">E</a></code></li>
+<li><code><a title="spec.Server.EC" href="#spec.Server.EC">EC</a></code></li>
+<li><code><a title="spec.Server.QC" href="#spec.Server.QC">QC</a></code></li>
+<li><code><a title="spec.Server.TC" href="#spec.Server.TC">TC</a></code></li>
+<li><code><a title="spec.Server.V" href="#spec.Server.V">V</a></code></li>
+<li><code><a title="spec.Server.VC" href="#spec.Server.VC">VC</a></code></li>
+<li><code><a title="spec.Server.getLeader" href="#spec.Server.getLeader">getLeader</a></code></li>
+<li><code><a title="spec.Server.isEpochView" href="#spec.Server.isEpochView">isEpochView</a></code></li>
+<li><code><a title="spec.Server.isInitial" href="#spec.Server.isInitial">isInitial</a></code></li>
+<li><code><a title="spec.Server.isLeader" href="#spec.Server.isLeader">isLeader</a></code></li>
+<li><code><a title="spec.Server.run" href="#spec.Server.run">run</a></code></li>
+<li><code><a title="spec.Server.setup" href="#spec.Server.setup">setup</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>

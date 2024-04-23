@@ -1,0 +1,27 @@
+import spec  # import the module, spec.da, to be checked 
+
+class P (process, spec.P):  # extend process P in module polling
+  def setup(checker, p): super().setup(p)  # set up checker and original p 
+  def send(m, to):             # override send to send information to checker
+    super().send(m, to)        # do original send
+    super().send(('sent', m, to, logical_clock()), to= checker) # send to checker
+  def receive(msg= m, from_= fr):  # add a receive matching any message received
+    super().send(('rcvd', m, fr, logical_clock()), to= checker) # send to checker
+
+class Checker (process):
+  def setup(p): pass        # pass in processes p
+  def run():
+    await each(r in p, has= some(received(('rcvd', ('outcome',_), _), from_=_r)))
+    output('~~ polling ended. checking safety:', S1(), S2(), S3(), S4())
+  def S1(): pass
+  def S2(): pass
+  def S3(): pass
+  def S4(): pass
+
+def main():
+  config(clock = lamport)          # to be decided
+  checker = new(Checker)           # create checker
+  p = new(P, [checker], num= 10)  # as in polling but add checker
+  setup(checker, [p])           # setup checker with p
+  start(checker)                   # start checker
+  start(p)
